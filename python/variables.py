@@ -153,7 +153,63 @@
 # ip.add('python')
 # print(ip)
 
-ip=frozenset(['hi','hello',45])
-print(ip)
+# ip=frozenset(['hi','hello',45])
+# print(ip)
 # ip.remove('hi')
 #frozensets are immutable
+
+info={}
+print(type(info))
+
+#to store information/properties/features/characterstics of a particular object, will use dictionaries
+#in the form of key-value pairs.
+# movie_info={"moviename":"kingdom",
+#             'budget':'70cr',
+#             'release-date':'31/07/2025',
+#             'director':'gautham'
+#             }
+
+# print(movie_info['budget'])
+# print(movie_info)
+# #i want to add genre-action
+# movie_info['genre']='action'
+# print(movie_info)
+# movie_info['cast']=['VD','SD','BHAGAYASRI']
+# print(movie_info)
+
+# movie_info['remuneration']={'vd_rem':'25cr','sd_rem':'5cr','bhagi_rem':'2cr'}
+# print(movie_info)
+
+movie_info={'moviename': 'kingdom', 
+ 'budget': '70cr', 
+ 'release-date': '31/07/2025', 
+ 'director': 'gautham', 
+ 'genre': 'action', #remove or delete
+ 'cast': ['VD', 'SD', 'BHAGAYASRI'], 
+ 'remuneration': {'vd_rem': '25cr', 'sd_rem': '5cr', 'bhagi_rem': '2cr'}}
+
+print(movie_info['remuneration']['vd_rem'])
+
+#VD is charging 25cr for acting in kingdom movie
+
+print(f"{movie_info['cast'][0]} is charging {movie_info['remuneration']['vd_rem']} for acting in {movie_info['moviename']} movie")
+del movie_info['genre'] #to delete property from dictionary
+print(movie_info)
+
+movies=[
+    {'moviename': 'kingdom','cast':['vd','sd','bhagi']}, 
+    {'moviname':'harihara veeramallu','cast':['pspk','nidhi','Sr']}, 
+    {'moviename':'coolie','cast':['rajini','nag','pooja']},
+    {'moviename':'war2','cast':['ntr','krithik','kiara']}
+    ]
+movie_name=['kingdom','HHVM','Coolie','war2','hit3','8vasanthalu']
+print(movie_name[len(movie_name)-1]) #to access last element from the list.
+
+#want to add value/element at the last index of the list
+
+op=movie_name+['M.S.DHONI'] #adding two lists and creating neww list
+print(op)
+
+#lists,tuples,set(normal and frozen),dictionaries,list of dictionaries
+
+
