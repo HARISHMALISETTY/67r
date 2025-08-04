@@ -203,13 +203,25 @@ movies=[
     {'moviename':'war2','cast':['ntr','krithik','kiara']}
     ]
 movie_name=['kingdom','HHVM','Coolie','war2','hit3','8vasanthalu']
-print(movie_name[len(movie_name)-1]) #to access last element from the list.
+# print(movie_name[len(movie_name)-1]) #to access last element from the list.
 
 #want to add value/element at the last index of the list
 
-op=movie_name+['M.S.DHONI'] #adding two lists and creating neww list
-print(op)
+# op=movie_name+['M.S.DHONI'] #adding two lists and creating neww list
+# print(op)
 
 #lists,tuples,set(normal and frozen),dictionaries,list of dictionaries
 
 
+
+ott_data = [ 
+{"platform": "Netflix", "shows": ["Stranger Things", "Wednesday"]}, 
+{"platform": "Prime", "shows": ["Mirzapur", "Farzi"]}, 
+{"platform": "Hotstar", "shows": ["Special Ops", "The Freelancer"]} 
+] 
+
+print(ott_data[1]['shows'])
+new_dat=ott_data[1]['shows']+['Mirzapur-2']
+print(new_dat)
+ott_data[1]['shows']=new_dat
+print(ott_data[1]['shows'])
