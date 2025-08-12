@@ -8,10 +8,11 @@ x='ramcharan'
 def tollywood():
     print(f"{x} is accessible in tollywood")
     x1='tillu' #x1 is having function scope/local scope
+    print(x1)
 
 def bollywood():
     print(f"{x} is  accessible in bollywood")
-    # print(x1)
+    print(x1)
     x2='ranbeer kapoor' #local scope throughout the bollywood function
     def localwood():
         print(f"{x} is accessible in localwood")
